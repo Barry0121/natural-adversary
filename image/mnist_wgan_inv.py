@@ -220,7 +220,7 @@ if __name__ == '__main__':
     fixed_images = test_data[0][:32]
     del test_data
 
-    tf.set_random_seed(326)
+    tf.random.set_seed(326)
     np.random.seed(326)
     fixed_noise = np.random.randn(64, args.z_dim)
 
